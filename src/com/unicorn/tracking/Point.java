@@ -59,7 +59,9 @@ public class Point {
             X = Integer.parseInt(split[0].trim());
             Y = Integer.parseInt(split[1].trim());
             Z = Integer.parseInt(split[2].trim());
-        }    	
+        } else {
+            throw new Exception("Invalid input: " + input);
+        }
     }
     
     public int getX() {
