@@ -16,7 +16,7 @@ SearchResult.java:
 
 Search.java:
 
-    This class parses the input file, creates points and calculate the distances. The distance of a new point is compared with the distances of the existing points in the array. If the distance of the new point is less the any point, the new point will be added and the existing point with the highest distance will be removed.
+    This class parses the input file, creates points and calculates the distances. The distance of a new point is compared with the distances of the existing points in the array. If the distance of the new point is less the a point, the new point will be added and the existing point with the longest distance will be removed.
 
 build.xml:
 
@@ -62,9 +62,9 @@ Where
 
 Discussion:
 
-The program loops through all the points in the input file, calculates the distance of each point immediately so that those points with longer distances will be dropped. The information for those dropped points will not use any the memory. The big O for this operation is O(n) where n is the number of the points listed in the input file. The invalid input will be dropped.
+The program loops through all the points in the input file, calculates the distance of each point immediately so that those points with longer distances will be dropped. The information for those dropped points will not use the memory. The big O for this operation is O(n) where n is the number of the points listed in the input file. The invalid input will be dropped.
 
-After creating a Point object for each point, the distance of the new point will be compared with the distances of the existing points in the array. If the distance is less than any point, the new point will be inserted to the array. As the size of the array is the size of the expected points to be printed, the big O of this operation will be O(m) where m is the expected number of the closest points.
+After creating a Point object for each point, the distance of the new point will be compared with the distances of the existing points in the array. If the distance is less than a point, the new point will be inserted to the array. As the size of the array is the size of the expected points to be printed, the big O of this operation will be O(m) where m is the expected number of the closest points.
 
 The total big O would be O(mn).
 
