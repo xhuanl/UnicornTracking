@@ -54,8 +54,13 @@ public class SearchResult {
             }
             return;
         }
-        
+                
         int i = actualSize - 1;
+
+        if (actualSize < maxSize) {
+            result[i + 1] = result[i];
+            actualSize++;
+        }
         
         /* Similar to the Insertion sort, if the distance to the new point is 
          * between the distances of the existing points, insert the new point
